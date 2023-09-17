@@ -1,0 +1,31 @@
+iframe {
+  pointer-events: none;
+}
+
+#root {
+  display: block;
+  background-color: #faf7f7;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#page-content {
+  width: 75%;
+  margin-left: 12.5%;
+  padding: 0 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #root {
+    padding-bottom: 4rem; /* prevent the navbar from overshadowing the root */
+  }
+
+  #page-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}

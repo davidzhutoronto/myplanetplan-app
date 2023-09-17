@@ -1,0 +1,38 @@
+.user-info-container {
+  background-color: white;
+  margin: 10px 0 !important;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 15px;
+}
+
+.user-info-container > div {
+  margin: 10px 0;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.email {
+  font-size: 1rem;
+}
+
+.points {
+  font-size: large;
+  font-weight: bold;
+}
+
+.action-container {
+  background-color: white;
+  margin: 10px 0 !important;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.aitem {
+  align-items: center;
+  margin-left: 0.5rem !important;
+  height: 3rem;
+}

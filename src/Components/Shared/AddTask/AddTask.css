@@ -1,0 +1,10 @@
+#submit-btn {
+  float: right;
+}
+
+.add-task-btn {
+  color: darkgreen !important;
+  margin-left: 0 !important;
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+  font-weight: bold !important;
+}

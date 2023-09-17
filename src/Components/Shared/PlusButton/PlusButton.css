@@ -1,0 +1,15 @@
+.PlusBtn {
+  position: fixed;
+  right: 15%;
+  bottom: 4rem;
+  border: 0px;
+  background-color: transparent;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .PlusBtn {
+    right: 0;
+  }
+}

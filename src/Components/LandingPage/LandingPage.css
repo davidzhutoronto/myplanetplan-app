@@ -1,0 +1,57 @@
+.landing-page-title {
+  text-align: center;
+}
+
+.welcome-title {
+  font-weight: 700;
+}
+
+.redirect-container {
+  position: relative;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.redirect-btn-in-picture {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(27, 103, 45);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.redirect-btn {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(27, 103, 45);
+}
+.redirect-btn:hover {
+  background-color: gray;
+}
+
+.author {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  color: white;
+}
+
+.logo {
+  max-width: 50px;
+  object-fit: contain;
+}
+
+.copy-right {
+  color: gray;
+}

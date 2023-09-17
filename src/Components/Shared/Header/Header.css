@@ -1,0 +1,35 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background: linear-gradient(90deg, darkgreen 0%, green 60%, purple 100%);
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0 !important;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.header-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.header-item-name {
+  display: inline-block;
+  height: 25px;
+  margin: 0 10px 0 10px;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-item-name {
+    display: none;
+  }
+}

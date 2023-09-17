@@ -1,0 +1,262 @@
+.visuals-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.points-label {
+  color: grey;
+  font-size: 12px;
+  margin: 0 0 0.5rem 0;
+}
+
+.visuals-container {
+  height: 250px;
+  margin: 10px 0 !important;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.house {
+  scale: 0.7;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  width: 360px;
+  border-bottom: 1px solid #3c2703;
+}
+
+@media only screen and (max-width: 768px) {
+  .visuals-container {
+    height: 20vh;
+  }
+  .house {
+    width: 100%;
+    min-width: 360px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .house {
+    scale: 1;
+  }
+}
+
+#building-front {
+  height: 50%;
+  width: 200px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr 3fr;
+  transform: translate(-20%);
+}
+
+.wall {
+  background-color: #efefef;
+}
+
+.roof {
+  background-color: red;
+}
+
+.sidewall {
+  background-color: #ddd;
+}
+
+#building-front .roof {
+  transform: skewx(-37deg) translate(38%);
+}
+
+#building-front .solar-panel {
+  background-color: #111;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  width: 50%;
+  height: 70%;
+  position: relative;
+  top: 10%;
+  left: 5%;
+
+  --nr: 3; /* number of rows */
+  --nc: 5; /* number of columns */
+  --b: 1px; /* border length */
+
+  background: conic-gradient(from 90deg at var(--b) var(--b), #111 90deg, white 0)
+    calc(-1 * var(--b)) calc(-1 * var(--b)) / calc(100% / var(--nc)) calc(100% / var(--nr));
+}
+
+#building-front .triangle {
+  border-bottom: 80px solid #eee;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+}
+
+#building-front .wall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.window-top {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: lightblue;
+  transform: translateY(-100%);
+}
+
+.window-mid {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.window-mid::before,
+.window-mid::after {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: lightblue;
+}
+
+.door {
+  display: inline-block;
+  content: '';
+  height: 40px;
+  width: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: black;
+  transform: translateY(75%);
+}
+
+#garage {
+  display: grid;
+  height: 90px;
+  width: 80px;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1.5fr 3fr;
+  z-index: 1;
+}
+
+#garage .triangle {
+  border-bottom: 30px solid #eee;
+  border-left: 32px solid transparent;
+}
+
+#garage .roof {
+  transform: skewx(-47deg) translate(32%);
+}
+
+#garage .sidewall {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.house-bushes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(15px);
+}
+
+.bushes-container {
+  display: flex;
+  position: relative;
+  height: 15px;
+  width: 40px;
+}
+
+.bushes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: green;
+  z-index: 2;
+  border-radius: 30px 30px 3px 0;
+}
+.bushes::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  bottom: -0px;
+  left: 15px;
+  height: 10px;
+  width: 10px;
+  background: green;
+  border-radius: 50% 50% 0 0;
+}
+.bushes::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  height: 10px;
+  width: 13px;
+  background: green;
+  border-radius: 50% 50% 15% 0;
+}
+
+.tree-container {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 70px;
+  min-height: 200px;
+}
+
+.tree {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 43px;
+  height: 50px;
+  width: 50px;
+  background: #94ab38;
+  border: #94ab38 solid 1px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  transform: rotate(315deg);
+  box-sizing: border-box;
+}
+
+.tree::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 23px;
+  width: 5px;
+  height: 50px;
+  background: #3c2703;
+  transform: rotate(45deg) translateY(44px);
+}
+
+.tree2 {
+  position: absolute;
+  left: -30px;
+  bottom: 59px;
+  background: #7b921f;
+  transform: rotate(315deg) scale(1.25);
+}
+
+.tree3 {
+  position: absolute;
+  left: 20px;
+  bottom: 60px;
+  background: #7b921f;
+  transform: rotate(315deg) scale(1.25);
+}

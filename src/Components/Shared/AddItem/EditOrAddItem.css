@@ -1,0 +1,14 @@
+.taskInput {
+  width: 100%;
+  height: 40px;
+  border: 1.5px solid #dfdfdf;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 10px;
+  margin: 0 px;
+}
+
+.task-completed {
+  opacity: 0.5;
+  pointer-events: none;
+}

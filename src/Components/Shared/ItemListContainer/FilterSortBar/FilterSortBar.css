@@ -1,0 +1,42 @@
+.flsort .filtersortbar {
+  margin: 10px 0 !important;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.flsort .list-group .active {
+  background-color: #E7F1FF;
+  border-color: rgba(0, 0, 0, 0.125);
+  color: #0c63e4;
+}
+
+.flsort .list-group .list-group-item {
+  padding: 6px 0 6px 25px;
+  cursor: pointer;
+}
+
+.btnw {
+  height: 45px;
+}
+
+.icon {
+  height: 25px;
+  width: 30px;
+  padding: 0 7px;
+}
+
+.reset-button {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border-radius: 5px 5px 0 0 !important;
+  border-bottom: 0 !important;
+}
+
+.accordion-item:first-of-type {
+  border-radius: 0 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
